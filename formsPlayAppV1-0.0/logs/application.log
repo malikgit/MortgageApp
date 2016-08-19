@@ -1,0 +1,1328 @@
+2016-05-16 20:18:22,652 - [INFO] - from play in pool-14-thread-1 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-05-16 20:18:47,330 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-05-16 20:18:48,351 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Inside mortgageApplication Method  
+
+2016-05-16 20:18:48,375 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+inside (.) checkExpireDate  method  
+
+2016-05-16 20:18:48,376 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+crmLead id is  ------ 4574
+ Referral Email id is  ------  guy@visdom.ca
+ referralName Billy 
+ ExpirDate = 10/14/2016
+
+2016-05-16 20:18:53,443 - [ERROR] - from application in play-akka.actor.default-dispatcher-2 
+Opporunity is Filling the form First Time so error To get OldOpporunity Deatails from Couchbase, Given OpporunityDetails= null
+com.syml.mortgageapplication.impl.MortgageApplicationPageServiceException: Error when reading Opportunity data from couchbase for OpporunityID=4574
+	at com.syml.couchbasehelper.CouchbaseServiceHelper.getCouhbaseDataByKey(CouchbaseServiceHelper.java:25) ~[classes/:na]
+	at com.syml.mortgageapplication.impl.MortgageApplicationPageService.checkOpporunityExist(MortgageApplicationPageService.java:107) ~[classes/:na]
+	at controllers.Mortgage.mortgageApplication(Mortgage.java:110) [classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$24$$anonfun$apply$24.apply(routes_routing.scala:646) [classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$24$$anonfun$apply$24.apply(routes_routing.scala:646) [classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) [scala-library-2.11.6.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) [play_2.11-2.3.9.jar:2.3.9]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) [play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at com.syml.couchbase.dao.service.CouchBaseService.getCouhbaseDataByKey(CouchBaseService.java:106) ~[symlInfrastracture-0.0.1-SNAPSHOT.jar:na]
+	at com.syml.couchbasehelper.CouchbaseServiceHelper.getCouhbaseDataByKey(CouchbaseServiceHelper.java:21) ~[classes/:na]
+	... 40 common frames omitted
+
+2016-05-16 20:18:53,452 - [DEBUG] - from application in play-akka.actor.default-dispatcher-2 
+Old Opporunity Details null
+
+2016-05-16 20:18:53,457 - [INFO] - from application in play-akka.actor.default-dispatcher-2 
+Is it mobileDevice =false
+
+2016-05-16 20:19:54,376 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Inside mortgagePage2 
+
+2016-05-16 20:19:57,016 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:19:57,291 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+applicant list size = 0
+
+2016-05-16 20:19:57,296 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+applicant size at last 2
+
+2016-05-16 20:19:57,296 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Inside createApplicant() of Service Csass
+
+2016-05-16 20:19:57,305 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+createApplicant of PostgresDAOOpportunity [id=4574, application_no=null, hr_department_id=1, application_date=null, what_is_your_lending_goal=1, province=null, down_payment_amount=null, purchase_price=null, bank_account=null, rrsp_amount=null, stage_id=10, type=opportunity, active=null, borrowed_amount=null, sale_of_existing_amount=null, gifted_amount=null, personal_cash_amount=null, existing_equity_amount=null, sweat_equity_amount=null, monthly_rental_income=null, mls=null, address=null, city=null, living_in_property=null, postal_code=null, buy_new_vehicle=null, property_value=null, heating=null, water=null, property_type=null, property_style=null, garage_type=null, garage_size=null, square_footage=null, sewage=null, desired_mortgage_type=null, desired_term=null, desired_amortization=null, income_decreased_worried=null, future_family=null, lifestyle_change=null, financial_risk_taker=null, property_less_then_5_years=null, job_5_years=null, opportunity_id=null, applicants=[Applicant [id=null, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=null, home=null, cell=232-323-3223, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null], Applicant [id=null, applicant_name=prakash, applicant_last_name=singh, email_personal=akhandamanimalik@bizruntime.com, work=null, home=null, cell=333-334-3434, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null]], areUsingTouchScreenDevice=null, isAdditionalApplicantExist=yes, liveDetails=null, pogressStatus=10, investment=null, additional_amount=null, expireDate=10/14/2016, forms=Forms [deviceType=Desktop, ip=null, pages=null, startTime=null, geoCoordinates=null], referralSourceName=Billy, referralSourceEmail=guy@visdom.ca, mortgage_Brokerage_Disclosures_Id=null, user_id=26, create_uid=26, role=C, additionalFunds=null, mlsListed=null, lendingGoal=PreApproval, propertyType=null, propertyStyle=null, squareFootage=null, propertyHeated=null, propertyWater=null, propertySewage=null, garageType=null, garageSize=null, propertyAddress=null]
+
+2016-05-16 20:19:57,305 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+size2
+
+2016-05-16 20:19:57,308 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+Before creating SESSION_FACTORY null
+
+2016-05-16 20:21:11,241 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+After creating SESSION_FACTORY org.hibernate.internal.SessionFactoryImpl@4d7426fb
+
+2016-05-16 20:21:14,124 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Update on Opportunity and Applicant is sucessful.
+
+2016-05-16 20:21:14,125 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+inside (.) setSession   with opporunity = Opportunity [id=4574, application_no=null, hr_department_id=1, application_date=null, what_is_your_lending_goal=1, province=null, down_payment_amount=null, purchase_price=null, bank_account=null, rrsp_amount=null, stage_id=10, type=opportunity, active=null, borrowed_amount=null, sale_of_existing_amount=null, gifted_amount=null, personal_cash_amount=null, existing_equity_amount=null, sweat_equity_amount=null, monthly_rental_income=null, mls=null, address=null, city=null, living_in_property=null, postal_code=null, buy_new_vehicle=null, property_value=null, heating=null, water=null, property_type=null, property_style=null, garage_type=null, garage_size=null, square_footage=null, sewage=null, desired_mortgage_type=null, desired_term=null, desired_amortization=null, income_decreased_worried=null, future_family=null, lifestyle_change=null, financial_risk_taker=null, property_less_then_5_years=null, job_5_years=null, opportunity_id=null, applicants=[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=null, home=null, cell=232-323-3223, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null], Applicant [id=3064, applicant_name=prakash, applicant_last_name=singh, email_personal=akhandamanimalik@bizruntime.com, work=null, home=null, cell=333-334-3434, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null]], areUsingTouchScreenDevice=null, isAdditionalApplicantExist=yes, liveDetails=null, pogressStatus=10, investment=null, additional_amount=null, expireDate=10/14/2016, forms=Forms [deviceType=Desktop, ip=null, pages=null, startTime=null, geoCoordinates=null], referralSourceName=Billy, referralSourceEmail=guy@visdom.ca, mortgage_Brokerage_Disclosures_Id=null, user_id=26, create_uid=26, role=C, additionalFunds=null, mlsListed=null, lendingGoal=PreApproval, propertyType=null, propertyStyle=null, squareFootage=null, propertyHeated=null, propertyWater=null, propertySewage=null, garageType=null, garageSize=null, propertyAddress=null]
+
+2016-05-16 20:21:14,125 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+applicant size 2
+
+2016-05-16 20:21:16,043 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Insert of page Two details sucess Full Opportunity [id=4574, application_no=null, hr_department_id=1, application_date=null, what_is_your_lending_goal=1, province=null, down_payment_amount=null, purchase_price=null, bank_account=null, rrsp_amount=null, stage_id=10, type=opportunity, active=null, borrowed_amount=null, sale_of_existing_amount=null, gifted_amount=null, personal_cash_amount=null, existing_equity_amount=null, sweat_equity_amount=null, monthly_rental_income=null, mls=null, address=null, city=null, living_in_property=null, postal_code=null, buy_new_vehicle=null, property_value=null, heating=null, water=null, property_type=null, property_style=null, garage_type=null, garage_size=null, square_footage=null, sewage=null, desired_mortgage_type=null, desired_term=null, desired_amortization=null, income_decreased_worried=null, future_family=null, lifestyle_change=null, financial_risk_taker=null, property_less_then_5_years=null, job_5_years=null, opportunity_id=null, applicants=[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=null, home=null, cell=232-323-3223, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null], Applicant [id=3064, applicant_name=prakash, applicant_last_name=singh, email_personal=akhandamanimalik@bizruntime.com, work=null, home=null, cell=333-334-3434, dob=null, relationship_status=Single, sin=null, non_resident=null, opportunities=[], listOfAddress=[], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=null, electronicSign=null, normalSign=null, additionalReason=null]], areUsingTouchScreenDevice=null, isAdditionalApplicantExist=yes, liveDetails=null, pogressStatus=10, investment=null, additional_amount=null, expireDate=10/14/2016, forms=Forms [deviceType=Desktop, ip=null, pages=null, startTime=null, geoCoordinates=null], referralSourceName=Billy, referralSourceEmail=guy@visdom.ca, mortgage_Brokerage_Disclosures_Id=null, user_id=26, create_uid=26, role=C, additionalFunds=null, mlsListed=null, lendingGoal=PreApproval, propertyType=null, propertyStyle=null, squareFootage=null, propertyHeated=null, propertyWater=null, propertySewage=null, garageType=null, garageSize=null, propertyAddress=null]
+
+2016-05-16 20:21:29,707 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Inside mortgagePage2Pre
+
+2016-05-16 20:21:29,713 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Inside (.) updatePage2PreDetails of MortgageApplicationPage2PreService 
+
+2016-05-16 20:21:31,671 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:21:31,767 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Inside (.) MortgageApplicationPage2PreService 
+
+2016-05-16 20:21:31,778 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+provience BC
+ purchaseprice :2342
+ downpayment :234
+ living4Financing  Renter
+ leadin goal PreApproval
+ additionalApplicants  null
+
+2016-05-16 20:21:31,781 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Renter
+
+2016-05-16 20:21:31,782 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Inside for loop [Ljava.lang.String;@5713c1a6
+
+2016-05-16 20:21:31,782 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+set BankAccount BankAccount
+
+2016-05-16 20:21:31,782 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Bank_account>>>>>>>> 1.0
+
+2016-05-16 20:21:31,782 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Inside insertOpportunityPage2Details() of Service Csass
+
+2016-05-16 20:21:31,782 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Inside updateOpportunityPage2 of PostgresDAO
+
+2016-05-16 20:21:32,894 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+What_is_your_lending_goal 1
+
+2016-05-16 20:21:32,895 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+PreApproval Selected
+
+2016-05-16 20:21:32,895 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Province BCPurchase_price 2342.0Down_payment_amount 234.0
+ Bank_account 1.0
+ Rrsp_amount null
+ Borrowed_amount null
+ Sale_of_existing_amount null
+ Gifted_amountnull
+ Personal_cash_amount null
+ Existing_equity_amount null
+ Sweat_equity_amount null
+ etLiving_in_property 2
+ Monthly_rental_income 234.0
+
+2016-05-16 20:21:32,895 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+assignOppertunityPre-Approval updated
+
+2016-05-16 20:21:33,584 - [INFO] - from application in play-akka.actor.default-dispatcher-12 
+Page2 details updated successfully.
+
+2016-05-16 20:21:35,601 - [DEBUG] - from application in play-akka.actor.default-dispatcher-12 
+Page2 data successfully updated in PostgresDB and CouchbaseDB 
+
+2016-05-16 20:21:42,330 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+Inside (.)   mortgagePage4   
+
+2016-05-16 20:21:44,179 - [DEBUG] - from application in play-akka.actor.default-dispatcher-15 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:21:44,271 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+Inside updateOpportunityPage4 method of PostGresDaoService class
+
+2016-05-16 20:21:44,271 - [INFO] - from application in play-akka.actor.default-dispatcher-15 
+Inside updateOpportunityPage4 of PostgresDAO
+
+2016-05-16 20:21:55,070 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+ Inside (.) mortgagePage5a controller method 
+
+2016-05-16 20:21:56,931 - [DEBUG] - from application in play-akka.actor.default-dispatcher-14 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:21:57,006 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
+Inside updateOpportunityPage5a method of PostGresDaoService class
+
+2016-05-16 20:21:57,006 - [INFO] - from application in play-akka.actor.default-dispatcher-14 
+Inside updateOpportunityPage5a of PostgresDAO
+
+2016-05-16 20:22:06,126 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
+Inside method mortgagePage5b 
+
+2016-05-16 20:22:07,990 - [DEBUG] - from application in play-akka.actor.default-dispatcher-16 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:22:08,060 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
+Inside updateOpportunityPage5b method of PostGresDaoService class
+
+2016-05-16 20:22:08,060 - [INFO] - from application in play-akka.actor.default-dispatcher-16 
+Inside updateOpportunityPage5b of PostgresDAO
+
+2016-05-16 20:22:30,688 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+ Inside (.) mortgagePage6  Method 
+
+2016-05-16 20:22:32,644 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:22:32,703 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+birthday Tue Jun 05 00:00:00 IST 1984
+ inputBirthDay  06/05/1984
+
+2016-05-16 20:22:32,703 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Inside updateOpportunityPage5b method of PostGresDaoService class
+
+2016-05-16 20:22:32,703 - [INFO] - from application in play-akka.actor.default-dispatcher-6 
+Inside updateOpportunityPage6 of PostgresDAO
+
+2016-05-16 20:22:32,703 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+applicants Size 2
+
+2016-05-16 20:22:33,797 - [DEBUG] - from application in play-akka.actor.default-dispatcher-6 
+Bio information data updated into Applicant_record Successfully.
+
+2016-05-16 20:24:17,049 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+Inside  (.) mortgagePage7
+
+2016-05-16 20:24:17,072 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+Inside (.) updateOpportunityAddresses of MortgageApplicationPageSevenService
+
+2016-05-16 20:24:18,939 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:24:18,986 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getFirstPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:18,992 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:18,993 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+currentAddress34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India
+ input MovedIn1 01/06/2016
+ currentSumMonth4
+ totalcurrentMonths4
+
+2016-05-16 20:24:18,994 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+currentSumMonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4<<<<<<<<<<<<<
+
+2016-05-16 20:24:18,994 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalcurrentMonths>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4<<<<<<<<<<<<<
+
+2016-05-16 20:24:18,994 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:18,994 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:18,995 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=4, inputAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonth=4, movedInDate=01/06/2016}
+
+2016-05-16 20:24:18,995 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalNoOfMonth 4
+
+2016-05-16 20:24:18,995 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getSecPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:19,001 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,002 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+currentAddress21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India
+ input MovedIn1 05/19/2015
+ After string-to-date movedIn1 8
+ currentSumMonth12
+
+2016-05-16 20:24:19,002 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+priorSumMonth1>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,002 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalpriorcurrentmonths1>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,002 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,002 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=8, inputAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=12, movedInDate=05/19/2015}
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalNoOfMonth 12
+
+2016-05-16 20:24:19,003 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getThirdPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+priorAddress223, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India
+ inputMovedIn3 05/08/2014
+ priorSumMonth212
+ formInputTotalMonth 24
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+priormonthsum2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalpriormonths2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>24<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,003 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,003 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:19,004 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=12, inputAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=24, movedInDate=05/08/2014}
+
+2016-05-16 20:24:19,004 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getFirstPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+coAppcurrentAddress33, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India
+ coAppInputMovedIn1 02/02/2016
+ coAppCurrentSumMonth3
+ coAppTotalcurrentMonths 3
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co first summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>3<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co first totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>3<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,009 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=3, inputAddress=33, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=3, movedInDate=02/02/2016}
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalNoOfMonth 3
+
+2016-05-16 20:24:19,009 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getSecPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:19,009 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+coAppPriorAddress145, Magrath Rd, Ashok Nagar, Richmond Town, Bengaluru, Karnataka 560025, India
+ coAppInputMovedIn2 05/08/2015
+ coAppPriorSumMonth18
+ coAppTotalpriorcurrentmonths1 12
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co 2nd summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co 2nd totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalNoOfMonth 12
+
+2016-05-16 20:24:19,010 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=8, inputAddress=45, Magrath Rd, Ashok Nagar, Richmond Town, Bengaluru, Karnataka 560025, India, totalMonth=12, movedInDate=05/08/2015}
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+totalNoOfMonth 12
+
+2016-05-16 20:24:19,010 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+inside (.) getThirdPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,010 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+coApppriorAddress256, Central St, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India
+ coAppInputMovedIn3 05/14/2014
+ coApppriorSumMonth212
+ formInputTotalMonth 24
+
+2016-05-16 20:24:19,013 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co 3rd summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,013 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+co 3rd totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>24<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:19,013 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+================================================================================
+
+2016-05-16 20:24:19,013 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-11 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:19,013 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+readFormData =============================================================================== {sumMonth=12, inputAddress=56, Central St, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India, totalMonth=24, movedInDate=05/14/2014}
+
+2016-05-16 20:24:19,013 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+Inside updateOpportunityPage7 method of PostGresDaoService class
+
+2016-05-16 20:24:19,017 - [INFO] - from application in play-akka.actor.default-dispatcher-11 
+Inside updateOpportunityPage7 of PostgresDAO
+
+2016-05-16 20:24:19,017 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+applicants size in DAO 2
+
+2016-05-16 20:24:19,022 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3063
+
+2016-05-16 20:24:19,235 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3063
+
+2016-05-16 20:24:19,236 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3063
+
+2016-05-16 20:24:19,236 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3064
+
+2016-05-16 20:24:19,237 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3064
+
+2016-05-16 20:24:19,237 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+id3064
+
+2016-05-16 20:24:20,711 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+Address information data updated into Applicant_Address Successfully.
+
+2016-05-16 20:24:22,847 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+Comming here
+
+2016-05-16 20:24:22,847 - [DEBUG] - from application in play-akka.actor.default-dispatcher-11 
+applicant-->Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6223, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=Wed Jan 06 00:00:00 IST 2016, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6224, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=Tue May 19 00:00:00 IST 2015, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6225, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=Thu May 08 00:00:00 IST 2014, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:24:28,468 - [INFO] - from application in play-akka.actor.default-dispatcher-19 
+Inside  (.) mortgagePage7
+
+2016-05-16 20:24:30,273 - [DEBUG] - from application in play-akka.actor.default-dispatcher-19 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:24:30,337 - [DEBUG] - from application in play-akka.actor.default-dispatcher-19 
+back page address -->21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India
+
+2016-05-16 20:24:40,593 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+Inside  (.) mortgagePage7
+
+2016-05-16 20:24:40,597 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+Inside (.) updateOpportunityAddresses of MortgageApplicationPageSevenService
+
+2016-05-16 20:24:42,437 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:24:42,480 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getFirstPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,486 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,486 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+currentAddress34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India
+ input MovedIn1 Wed Jan 06 00:00:00 IST 2016
+ currentSumMonth4
+ totalcurrentMonths4
+
+2016-05-16 20:24:42,486 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+currentSumMonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,486 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalcurrentMonths>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>4<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,486 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,487 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,493 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,493 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=4, inputAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonth=4, movedInDate=Wed Jan 06 00:00:00 IST 2016}
+
+2016-05-16 20:24:42,494 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalNoOfMonth 4
+
+2016-05-16 20:24:42,498 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getSecPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,498 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,498 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+currentAddress21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India
+ input MovedIn1 Tue May 19 00:00:00 IST 2015
+ After string-to-date movedIn1 8
+ currentSumMonth12
+
+2016-05-16 20:24:42,498 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+priorSumMonth1>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,498 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalpriorcurrentmonths1>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,498 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,498 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,499 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=8, inputAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=12, movedInDate=Tue May 19 00:00:00 IST 2015}
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalNoOfMonth 12
+
+2016-05-16 20:24:42,499 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getThirdPriorAddressDataOfApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+priorAddress223, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India
+ inputMovedIn3 Thu May 08 00:00:00 IST 2014
+ priorSumMonth212
+ formInputTotalMonth 24
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+priormonthsum2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalpriormonths2>>>>>>>>>>>>>>>>>>>>>>>>>>>>>24<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,499 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,499 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,499 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,500 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=12, inputAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=24, movedInDate=Thu May 08 00:00:00 IST 2014}
+
+2016-05-16 20:24:42,500 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getFirstPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,500 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,500 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+coAppcurrentAddress33, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India
+ coAppInputMovedIn1 Tue Feb 02 00:00:00 IST 2016
+ coAppCurrentSumMonth3
+ coAppTotalcurrentMonths 3
+
+2016-05-16 20:24:42,500 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co first summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>3<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,506 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co first totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>3<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,506 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,506 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,506 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,506 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=3, inputAddress=33, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonth=3, movedInDate=Tue Feb 02 00:00:00 IST 2016}
+
+2016-05-16 20:24:42,506 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalNoOfMonth 3
+
+2016-05-16 20:24:42,506 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getSecPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+coAppPriorAddress145, Magrath Rd, Ashok Nagar, Richmond Town, Bengaluru, Karnataka 560025, India
+ coAppInputMovedIn2 Fri May 08 00:00:00 IST 2015
+ coAppPriorSumMonth18
+ coAppTotalpriorcurrentmonths1 12
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co 2nd summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co 2nd totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>8<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,507 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalNoOfMonth 12
+
+2016-05-16 20:24:42,508 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,512 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,512 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=8, inputAddress=45, Magrath Rd, Ashok Nagar, Richmond Town, Bengaluru, Karnataka 560025, India, totalMonth=12, movedInDate=Fri May 08 00:00:00 IST 2015}
+
+2016-05-16 20:24:42,512 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+totalNoOfMonth 12
+
+2016-05-16 20:24:42,512 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+inside (.) getThirdPriorAddressDataOfCoApplicant of MortgageApplicationPageSevenService 
+
+2016-05-16 20:24:42,512 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,513 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+coApppriorAddress256, Central St, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India
+ coAppInputMovedIn3 Wed May 14 00:00:00 IST 2014
+ coApppriorSumMonth212
+ formInputTotalMonth 24
+
+2016-05-16 20:24:42,513 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co 3rd summonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>12<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,513 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+co 3rd totalmonth>>>>>>>>>>>>>>>>>>>>>>>>>>>>>24<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+2016-05-16 20:24:42,513 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+================================================================================
+
+2016-05-16 20:24:42,514 - [ERROR] - from com.syml.SplitAddress in play-akka.actor.default-dispatcher-21 
+error in spliting addressjava.lang.ArrayIndexOutOfBoundsException: 2
+
+2016-05-16 20:24:42,517 - [ERROR] - from application in play-akka.actor.default-dispatcher-21 
+Error in parsing string to date
+
+2016-05-16 20:24:42,517 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+readFormData =============================================================================== {sumMonth=12, inputAddress=56, Central St, Tasker Town, Shivaji Nagar, Bengaluru, Karnataka 560001, India, totalMonth=24, movedInDate=Wed May 14 00:00:00 IST 2014}
+
+2016-05-16 20:24:42,517 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+Inside updateOpportunityPage7 method of PostGresDaoService class
+
+2016-05-16 20:24:42,517 - [INFO] - from application in play-akka.actor.default-dispatcher-21 
+Inside updateOpportunityPage7 of PostgresDAO
+
+2016-05-16 20:24:42,517 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+applicants size in DAO 2
+
+2016-05-16 20:24:42,517 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3063
+
+2016-05-16 20:24:42,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3063
+
+2016-05-16 20:24:42,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3063
+
+2016-05-16 20:24:42,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3064
+
+2016-05-16 20:24:42,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3064
+
+2016-05-16 20:24:42,518 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+id3064
+
+2016-05-16 20:24:44,039 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+Address information data updated into Applicant_Address Successfully.
+
+2016-05-16 20:24:46,273 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+Comming here
+
+2016-05-16 20:24:46,273 - [DEBUG] - from application in play-akka.actor.default-dispatcher-21 
+applicant-->Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6229, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=null, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6230, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=null, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6231, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=null, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:26:09,646 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside mortgagePage8Suplementary() of Mortgage Controller
+
+2016-05-16 20:26:09,648 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+supplIncomeSrc [Ljava.lang.String;@7bf38fee
+
+2016-05-16 20:26:09,650 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+addtionalSrc [Ljava.lang.String;@7fcc1448
+
+2016-05-16 20:26:09,650 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside (.) getListOfIncome of Page8ApplSupplementaryService
+
+2016-05-16 20:26:11,497 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:26:11,541 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+Comming after couchbase invoke
+
+2016-05-16 20:26:11,543 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+list of income size 3
+
+2016-05-16 20:26:11,544 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside for loop [Ljava.lang.String;@314e77c3
+
+2016-05-16 20:26:11,545 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside for loop [Ljava.lang.String;@5eecc165
+
+2016-05-16 20:26:11,546 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside updateApplicantPage8Or9 method of PostGresDaoService class
+
+2016-05-16 20:26:11,546 - [INFO] - from application in play-akka.actor.default-dispatcher-23 
+Inside updateApplicantIncomePage8Or9 of PostgresDAO
+
+2016-05-16 20:26:11,765 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+list Of Income 2
+
+2016-05-16 20:26:12,008 - [DEBUG] - from application in play-akka.actor.default-dispatcher-23 
+Income information data updated into Applicant_record Successfully.
+
+2016-05-16 20:26:22,207 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+*** inside (.) mortgageBackPage8Suplementary ***
+
+2016-05-16 20:26:24,195 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:26:24,223 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+Inside insertOpportunityPage2Details() of Service Csass
+
+2016-05-16 20:26:24,227 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+Inside updateOpportunityPage2 of PostgresDAO
+
+2016-05-16 20:26:24,710 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+What_is_your_lending_goal 1
+
+2016-05-16 20:26:24,710 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+PreApproval Selected
+
+2016-05-16 20:26:24,711 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+Province BCPurchase_price 2342.0Down_payment_amount 234.0
+ Bank_account 1.0
+ Rrsp_amount null
+ Borrowed_amount null
+ Sale_of_existing_amount null
+ Gifted_amountnull
+ Personal_cash_amount null
+ Existing_equity_amount null
+ Sweat_equity_amount null
+ etLiving_in_property 2
+ Monthly_rental_income 234.0
+
+2016-05-16 20:26:24,711 - [DEBUG] - from application in play-akka.actor.default-dispatcher-32 
+assignOppertunityPre-Approval updated
+
+2016-05-16 20:26:24,945 - [INFO] - from application in play-akka.actor.default-dispatcher-32 
+Page2 details updated successfully.
+
+2016-05-16 20:26:27,403 - [ERROR] - from play in play-akka.actor.default-dispatcher-32 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2016-05-16 20:26:27,428 - [ERROR] - from application in play-akka.actor.default-dispatcher-32 
+
+
+! @7056bdj6l - Internal server error, for (GET) [/mortgageBackPageSuplA] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.6.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:98) ~[classes/:na]
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:750) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[scala-library-2.11.6.jar:na]
+	at views.html.supplementary_income$.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at views.html.supplementary_income$.render(supplementary_income.template.scala:243) ~[classes/:na]
+	at views.html.supplementary_income.render(supplementary_income.template.scala) ~[classes/:na]
+	at controllers.Mortgage.mortgageBackSuplementaryIncomeA(Mortgage.java:1385) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.6.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	... 6 common frames omitted
+
+2016-05-16 20:30:06,675 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-05-16 20:30:06,746 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+*** inside (.) mortgageBackPage8Suplementary ***
+
+2016-05-16 20:30:08,703 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:30:08,816 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside insertOpportunityPage2Details() of Service Csass
+
+2016-05-16 20:30:08,823 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateOpportunityPage2 of PostgresDAO
+
+2016-05-16 20:30:08,830 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Before creating SESSION_FACTORY null
+
+2016-05-16 20:31:15,452 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+After creating SESSION_FACTORY org.hibernate.internal.SessionFactoryImpl@36ff3e0a
+
+2016-05-16 20:31:15,928 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+What_is_your_lending_goal 1
+
+2016-05-16 20:31:15,931 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+PreApproval Selected
+
+2016-05-16 20:31:15,931 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Province BCPurchase_price 2342.0Down_payment_amount 234.0
+ Bank_account 1.0
+ Rrsp_amount null
+ Borrowed_amount null
+ Sale_of_existing_amount null
+ Gifted_amountnull
+ Personal_cash_amount null
+ Existing_equity_amount null
+ Sweat_equity_amount null
+ etLiving_in_property 2
+ Monthly_rental_income 234.0
+
+2016-05-16 20:31:15,931 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+assignOppertunityPre-Approval updated
+
+2016-05-16 20:31:16,145 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Page2 details updated successfully.
+
+2016-05-16 20:31:18,270 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+applicant [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6229, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=null, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6230, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=null, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6231, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=null, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[controllers.Income@5a86d0fa, controllers.Income@53456fb4, null, null], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:31:18,275 - [ERROR] - from play in play-akka.actor.default-dispatcher-27 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2016-05-16 20:31:18,278 - [ERROR] - from application in play-akka.actor.default-dispatcher-27 
+
+
+! @7056c47dn - Internal server error, for (GET) [/mortgageBackPageSuplA] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.6.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:98) ~[classes/:na]
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:750) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[scala-library-2.11.6.jar:na]
+	at views.html.supplementary_income$.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at views.html.supplementary_income$.render(supplementary_income.template.scala:243) ~[classes/:na]
+	at views.html.supplementary_income.render(supplementary_income.template.scala) ~[classes/:na]
+	at controllers.Mortgage.mortgageBackSuplementaryIncomeA(Mortgage.java:1386) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.6.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	... 6 common frames omitted
+
+2016-05-16 20:35:07,114 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-05-16 20:35:07,161 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+*** inside (.) mortgageBackPage8Suplementary ***
+
+2016-05-16 20:35:09,012 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:35:09,157 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside insertOpportunityPage2Details() of Service Csass
+
+2016-05-16 20:35:09,200 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateOpportunityPage2 of PostgresDAO
+
+2016-05-16 20:35:09,201 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Before creating SESSION_FACTORY null
+
+2016-05-16 20:36:17,293 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+After creating SESSION_FACTORY org.hibernate.internal.SessionFactoryImpl@7a5986c4
+
+2016-05-16 20:36:17,776 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+What_is_your_lending_goal 1
+
+2016-05-16 20:36:17,777 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+PreApproval Selected
+
+2016-05-16 20:36:17,778 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Province BCPurchase_price 2342.0Down_payment_amount 234.0
+ Bank_account 1.0
+ Rrsp_amount null
+ Borrowed_amount null
+ Sale_of_existing_amount null
+ Gifted_amountnull
+ Personal_cash_amount null
+ Existing_equity_amount null
+ Sweat_equity_amount null
+ etLiving_in_property 2
+ Monthly_rental_income 234.0
+
+2016-05-16 20:36:17,778 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+assignOppertunityPre-Approval updated
+
+2016-05-16 20:36:17,996 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Page2 details updated successfully.
+
+2016-05-16 20:36:20,195 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+applicant [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6229, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=null, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6230, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=null, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6231, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=null, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[controllers.Income@8c046a6, controllers.Income@6bdedb78, null, null], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:36:20,208 - [ERROR] - from play in play-akka.actor.default-dispatcher-27 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2016-05-16 20:36:20,227 - [ERROR] - from application in play-akka.actor.default-dispatcher-27 
+
+
+! @7056clc4o - Internal server error, for (GET) [/mortgageBackPageSuplA] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:296) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.DefaultApplication.handleError(Application.scala:402) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$4.apply(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:320) [play_2.11-2.3.9.jar:2.3.9]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:316) [play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.11.6.jar:na]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:23) [scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41) [akka-actor_2.11-2.3.4.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:393) [akka-actor_2.11-2.3.4.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.11.6.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:98) ~[classes/:na]
+	at views.html.supplementary_income$$anonfun$apply$1.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:750) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1202) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:245) ~[scala-library-2.11.6.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:104) ~[scala-library-2.11.6.jar:na]
+	at views.html.supplementary_income$.apply(supplementary_income.template.scala:97) ~[classes/:na]
+	at views.html.supplementary_income$.render(supplementary_income.template.scala:243) ~[classes/:na]
+	at views.html.supplementary_income.render(supplementary_income.template.scala) ~[classes/:na]
+	at controllers.Mortgage.mortgageBackSuplementaryIncomeA(Mortgage.java:1386) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$52$$anonfun$apply$52.apply(routes_routing.scala:870) ~[classes/:na]
+	at play.core.Router$HandlerInvokerFactory$$anon$4.resultCall(Router.scala:264) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.invocation(Router.scala:255) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:55) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.JavaAction$$anonfun$11.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:40) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:46) [play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:32) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$.apply(Future.scala:31) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.Future$.apply(Future.scala:492) ~[scala-library-2.11.6.jar:na]
+	at play.core.j.JavaAction$class.apply(JavaAction.scala:82) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.core.Router$HandlerInvokerFactory$JavaActionInvokerFactory$$anon$15$$anon$1.apply(Router.scala:252) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4$$anonfun$apply$5.apply(Action.scala:130) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:129) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1$$anonfun$apply$4.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at scala.Option.map(Option.scala:146) [scala-library-2.11.6.jar:na]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:128) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.mvc.Action$$anonfun$apply$1.apply(Action.scala:121) ~[play_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$mapM$1.apply(Iteratee.scala:483) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMapM$1.apply(Iteratee.scala:519) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at play.api.libs.iteratee.Iteratee$$anonfun$flatMap$1$$anonfun$apply$14.apply(Iteratee.scala:496) ~[play-iteratees_2.11-2.3.9.jar:2.3.9]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) [scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) [scala-library-2.11.6.jar:na]
+	... 6 common frames omitted
+
+2016-05-16 20:41:47,584 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2016-05-16 20:41:47,634 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+*** inside (.) mortgageBackPage8Suplementary ***
+
+2016-05-16 20:41:49,503 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:41:49,579 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+applicant [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6229, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=null, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6230, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=null, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6231, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=null, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:42:02,174 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside mortgagePage8Suplementary() of Mortgage Controller
+
+2016-05-16 20:42:02,175 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+supplIncomeSrc [Ljava.lang.String;@205b0bcf
+
+2016-05-16 20:42:02,175 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+addtionalSrc [Ljava.lang.String;@47b050dd
+
+2016-05-16 20:42:02,177 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside (.) getListOfIncome of Page8ApplSupplementaryService
+
+2016-05-16 20:42:04,041 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:42:04,069 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Comming after couchbase invoke
+
+2016-05-16 20:42:04,073 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+list of income size 3
+
+2016-05-16 20:42:04,073 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside for loop [Ljava.lang.String;@33847b69
+
+2016-05-16 20:42:04,073 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside for loop [Ljava.lang.String;@2383b7b8
+
+2016-05-16 20:42:04,073 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateApplicantPage8Or9 method of PostGresDaoService class
+
+2016-05-16 20:42:04,076 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateApplicantIncomePage8Or9 of PostgresDAO
+
+2016-05-16 20:42:04,081 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Before creating SESSION_FACTORY null
+
+2016-05-16 20:43:11,127 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+After creating SESSION_FACTORY org.hibernate.internal.SessionFactoryImpl@5bf9cf78
+
+2016-05-16 20:43:11,350 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+list Of Income 1
+
+2016-05-16 20:43:11,565 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Income information data updated into Applicant_record Successfully.
+
+2016-05-16 20:43:18,154 - [INFO] - from application in play-akka.actor.default-dispatcher-36 
+*** inside (.) mortgageBackPage8Suplementary ***
+
+2016-05-16 20:43:20,027 - [DEBUG] - from application in play-akka.actor.default-dispatcher-36 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:43:20,081 - [DEBUG] - from application in play-akka.actor.default-dispatcher-36 
+applicant [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[Applicant [id=3063, applicant_name=manoj, applicant_last_name=Prajapati, email_personal=manoj.prajapati@bizruntime.com, work=232-323-2423, home=null, cell=232-323-2423, dob=Tue Jun 01 00:00:00 IST 1982, relationship_status=Single, sin=234-234-234, non_resident=null, opportunities=[], listOfAddress=[Address [id=6229, applicant_id=3063, name=34, street=null, months=4, city=Cunningham Rd, provience=Vasanth, postalCode=null, movedIn=null, fullAddress=34, Cunningham Rd, Vasanth Nagar, Bengaluru, Karnataka 560051, India, totalMonths=4, applicant=null], Address [id=6230, applicant_id=3063, name=21, street=null, months=8, city=Hosur Rd, provience=Nanjappa, postalCode=null, movedIn=null, fullAddress=21, Hosur Rd, Nanjappa Layout, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=12, applicant=null], Address [id=6231, applicant_id=3063, name=23, street=null, months=12, city=Hosur Rd, provience=AK, postalCode=null, movedIn=null, fullAddress=23, Hosur Rd, AK Colony, Adugodi, Bengaluru, Karnataka 560030, India, totalMonths=24, applicant=null]], incomes=[controllers.Income@57e3fae7], assetList=[], properties=[], listOfMortgages=[], movedToCannada=null, dependant=1, electronicSign=null, normalSign=null, additionalReason=null]
+
+2016-05-16 20:44:21,481 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside mortgagePage8Suplementary() of Mortgage Controller
+
+2016-05-16 20:44:21,483 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+supplIncomeSrc [Ljava.lang.String;@1522fa59
+
+2016-05-16 20:44:21,483 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+addtionalSrc [Ljava.lang.String;@59093006
+
+2016-05-16 20:44:21,483 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside (.) getListOfIncome of Page8ApplSupplementaryService
+
+2016-05-16 20:44:23,316 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:44:23,349 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Comming after couchbase invoke
+
+2016-05-16 20:44:23,351 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+list of income size 3
+
+2016-05-16 20:44:23,352 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside for loop [Ljava.lang.String;@4fb9f109
+
+2016-05-16 20:44:23,353 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside for loop [Ljava.lang.String;@60360ea0
+
+2016-05-16 20:44:23,353 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateApplicantPage8Or9 method of PostGresDaoService class
+
+2016-05-16 20:44:23,353 - [INFO] - from application in play-akka.actor.default-dispatcher-27 
+Inside updateApplicantIncomePage8Or9 of PostgresDAO
+
+2016-05-16 20:44:23,582 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+list Of Income 2
+
+2016-05-16 20:44:23,801 - [DEBUG] - from application in play-akka.actor.default-dispatcher-27 
+Income information data updated into Applicant_record Successfully.
+
+2016-05-16 20:44:58,517 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+inside (.) mortgagePage10Assets
+
+2016-05-16 20:45:00,406 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:45:00,427 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+Inside for loop [Ljava.lang.String;@5e232161
+
+2016-05-16 20:45:00,440 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+after incomeoddlist = 2
+
+2016-05-16 20:45:00,440 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+selected values inside loop : Vehicle
+
+2016-05-16 20:45:00,440 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Vehicle Selected
+
+2016-05-16 20:45:00,441 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+selected values inside loop : BankAccount
+
+2016-05-16 20:45:00,442 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Bank Account selected.
+
+2016-05-16 20:45:00,442 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+Inside updateOpportunityPage10 method of PostGresDaoService class
+
+2016-05-16 20:45:00,442 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Inside updateApplicantAssetsPage10(Opportunity opportunity) of PostgresDAO
+
+2016-05-16 20:45:00,443 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3063
+
+2016-05-16 20:45:00,661 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3064
+
+2016-05-16 20:45:01,764 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Assets information data updated into crm_asset Successfully.
+
+2016-05-16 20:45:03,862 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+applicantName manoj
+
+2016-05-16 20:45:03,864 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+coApplicantName prakash
+
+2016-05-16 20:45:10,294 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:45:10,328 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+Inside (.) getApplicantAssets Vehicle
+
+2016-05-16 20:45:10,328 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+Inside (.) getApplicantAssets Vehicle
+
+2016-05-16 20:45:10,328 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+Inside (.) getApplicantAssets BankAccount
+
+2016-05-16 20:45:10,328 - [DEBUG] - from application in play-akka.actor.default-dispatcher-46 
+Inside (.) getApplicantAssets BankAccount
+
+2016-05-16 20:47:31,164 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+inside (.) mortgagePage10Assets
+
+2016-05-16 20:47:33,044 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+COuchbase Data Json Data for Opportunirty ID = 4574
+
+2016-05-16 20:47:33,081 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Inside (.) deleteApplicantAssets method of PostGresDaoService class 
+
+2016-05-16 20:47:33,083 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Inside deleteApplicantAssets(Opportunity opportunity) of PostgresDAO
+
+2016-05-16 20:47:33,083 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3063
+
+2016-05-16 20:47:33,096 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3064
+
+2016-05-16 20:47:34,181 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Assets information data updated into crm_asset Successfully.
+
+2016-05-16 20:47:34,182 - [INFO] - from application in play-akka.actor.default-dispatcher-44 
+Inside updateOpportunityPage10 method of PostGresDaoService class
+
+2016-05-16 20:47:34,182 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Inside updateApplicantAssetsPage10(Opportunity opportunity) of PostgresDAO
+
+2016-05-16 20:47:34,182 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3063
+
+2016-05-16 20:47:34,185 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+app id: 3064
+
+2016-05-16 20:47:34,185 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+Assets information data updated into crm_asset Successfully.
+
+2016-05-16 20:47:36,288 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+applicantName manoj
+
+2016-05-16 20:47:36,289 - [DEBUG] - from application in play-akka.actor.default-dispatcher-44 
+coApplicantName prakash
+

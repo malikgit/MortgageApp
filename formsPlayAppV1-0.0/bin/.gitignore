@@ -1,0 +1,16 @@
+/views/
+/addressgroup/
+/applicant.properties
+/application.conf
+/assets/
+/com/
+/config.properties
+/config11.properties
+/hibernate.cfg.xml
+/logback.xml
+/routes
+/visdomReferral.properties
+/ApplicationTest.class
+/IntegrationTest$1.class
+/IntegrationTest.class
+/controllers/
